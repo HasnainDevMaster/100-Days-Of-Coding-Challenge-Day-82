@@ -1,0 +1,86 @@
+<!--
+
+100 Days Of Coding Challenge!
+
+Day-82 Task:
+Read the following Articles and Code along with it:
+
+Updating UI with Javascript https://nextjs.org/learn/react-foundations/updating-ui-with-javascript
+
+Getting Started with React https://nextjs.org/learn/react-foundations/getting-started-with-react
+
+//-----------------------------------------------------------------------------------------------------
+-->
+
+<!-- Updating UI with Javascript -->
+
+<!-- An Example of an Imperative Programming: -->
+
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+    const app = document.getElementById('app');
+    // Create a new H1 element
+    const header = document.createElement('h1');
+    // Create a new text node for the H1 element
+    const text = 'Develop. Preview. Ship.';
+    const headerContent = document.createTextNode(text);
+    // Append the text node to the H1 element
+    header.appendChild(headerContent);
+    // Place the H1 element inside the div
+    app.appendChild(header);
+    </script>
+  </body>
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<!--
+1. Updating UI with JavaScript
+
+This concept focuses on how JavaScript interacts with the HTML elements on a webpage to dynamically update the user interface (UI).
+Instead of reloading the page to reflect changes, JavaScript can be used to update content, modify styles, and handle user input in real time.
+Common JavaScript methods used for updating the UI include:
+
+    * document.getElementById(), document.querySelector() to select elements.
+    * element.innerHTML, element.textContent to change the content of elements.
+    * Adding or removing classes to update styles (element.classList.add(), element.classList.remove()).
+
+JavaScript plays a crucial role in making web pages interactive and responsive to user actions, improving the overall user experience.
+
+
+2. HTML vs. the DOM
+
+HTML (Hypertext Markup Language) is the standard language used to create the structure of a webpage.
+It defines elements like paragraphs, headings, links, and buttons. However, when a webpage is loaded in the browser,
+the HTML is parsed and transformed into the DOM (Document Object Model), which represents the structure of the page in a tree-like format.
+Each HTML element becomes a node in the DOM, and JavaScript can interact with this DOM to manipulate the webpage.
+
+While HTML is static, the DOM is dynamic, allowing JavaScript to access, modify, or remove elements in real time.
+This distinction enables the seamless updating of the UI without refreshing the page.
+
+
+3. Imperative vs. Declarative Programming
+    
+    * Imperative Programming: This approach involves giving step-by-step instructions on how to achieve a specific result.
+    In terms of UI updates, this would mean telling the computer exactly how to update the DOM, node by node.
+    For example, using vanilla JavaScript to directly manipulate DOM elements is imperative programming.
+
+    * Declarative Programming: Instead of detailing the steps to reach a result, you describe what the UI should look like in its final state.
+    The underlying framework or library (like React) handles how to achieve that result. React,
+    for example, focuses on "what" you want the UI to be, and React takes care of "how" to update the DOM efficiently.
+
+
+4. React: A Declarative UI Library
+
+React is a JavaScript library built around the declarative programming paradigm.
+With React, instead of directly manipulating the DOM (as in imperative programming),
+you declare what the UI should look like at any given point in time by defining components.
+React automatically updates the DOM when data changes, ensuring the UI remains in sync with the application state.
+
+React’s key features include:
+
+    * Components: Reusable pieces of UI that can accept data (props) and manage their own state.
+    * Virtual DOM: React uses a virtual representation of the DOM to efficiently calculate and apply updates to the real DOM, minimizing re-renders and improving performance.
+By focusing on "what" the UI should be, developers can write cleaner, more maintainable code while React handles the complexity of updating the DOM efficiently. -->
